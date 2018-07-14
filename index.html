@@ -1,8 +1,68 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title></title>
+	<title>MusicPlayer using Javascript</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script type="text/javascript" href="js.js"></script>
+
+    <style type="text/css">
+    	#top-layer,#bottom-layer,#middle-layer{
+    		padding-top: 30px;
+    		padding-bottom: 30px;
+    	}
+    	#top-contents{
+    		font-size: 20px;
+    	}
+    </style>
+
 </head>
-<body>
-<h1>Hello,World!</h1>
+<body style="padding: 0px; border: 0px; max-height: 100%;max-width: 100%;">
+
+<div class="row" id="top-layer">
+	<div class="col s2">
+		<center><span id="top-contents" style="text-shadow: 1px 1px 1px grey;"><a href="https://github.com/PratikPatekar"><i class="fas fa-code"></i></a></span></center>
+	</div>
+	<div class="col s8">
+		<center><span id="top-contents">Current Contents</span></center>
+	</div>
+	<div class="col s2">
+		<center><span id="top-contents" style="text-shadow: 1px 1px 1px grey;"><i class="fas fa-bars"></i></span></center>
+	</div>
+
+
+</div>
+
+<div class="row" style="min-height: 440px;max-height: 490px;max-width: 100%; vertical-align: 50%;" id="middle-layer">
+	<div class="col s5">
+		
+	</div>
+	<div class="col s5">
+		
+	</div>
+	<div class="col s2">
+		<center><span><i class="fas fa-cloud-download-alt"></i></span></center>
+	</div>
+</div>
+
+<div class="row" id="bottom-layer">
+	<div class="col s2">
+		<center><span><i class="fas fa-cloud-download-alt"></i></span></center>
+	</div>
+	<div class="col s8">
+		
+	</div>
+	<div class="col s2">
+		<center><span><i class="fas fa-cloud-download-alt"></i></span></center>
+	</div>
+</div>
+
+
+
 </body>
 </html>
