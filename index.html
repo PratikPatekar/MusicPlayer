@@ -12,6 +12,11 @@
     <script type="text/javascript" href="js.js"></script>
 
     <style type="text/css">
+	 *{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box; 
+	}    
     	#top-layer,#bottom-layer,#middle-layer{
     		padding-top: 30px;
     		padding-bottom: 30px;
@@ -19,10 +24,16 @@
     	#top-contents{
     		font-size: 20px;
     	}
+	    #middle-layer{
+	 	position: absolute;   
+		max-height: 100%;
+		max-width: 100%;
+		    
+	}
     </style>
 
 </head>
-<body style="padding: 0px; border: 0px; max-height: 100%;max-width: 100%;">
+<body>
 
 <div class="row" id="top-layer">
 	<div class="col s2">
@@ -38,12 +49,17 @@
 
 </div>
 
-<div class="row" style="min-height: 440px;max-height: 490px;max-width: 100%; vertical-align: 50%;" id="middle-layer">
-	<div class="col s5">
+<div class="row" id="middle-layer">
+	<div class="col s2">
 		
 	</div>
-	<div class="col s5">
+	<div class="col s8">
+		<div style="position:absolute;">
 		
+		</div>
+		<div style="position:absolute;">
+		
+		</div>
 	</div>
 	<div class="col s2">
 		<center><span><i class="fas fa-cloud-download-alt"></i></span></center>
