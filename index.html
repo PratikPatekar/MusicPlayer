@@ -53,11 +53,12 @@
 		float:right;
 		
 	    }
-	 .mid{
-		display: -webkit-box;
-		display: inline-block;
-		float:left;
-	    }    
+	 .centroid{
+		position:absolute; 
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%); 
+	    }       
     </style>
 
 </head>
@@ -68,7 +69,7 @@
 	<div class="left">
 		<center><span id="top-contents" style="text-shadow: 1px 1px 1px grey;"><a href="https://github.com/PratikPatekar"><i class="fas fa-code"></i></a></span></center>
 	</div>
-	<div class="mid">
+	<div class="centroid">
 		<center><span id="top-contents">Current Contents</span></center>
 	</div>
 	<div class="right">
@@ -82,7 +83,7 @@
 	<div class="left">
 		
 	</div>
-	<div class="mid">
+	<div class="centroid">
 		
 	</div>
 	<div class="right">
@@ -94,7 +95,7 @@
 	<div class="left">
 		<center><span><i class="fas fa-cloud-download-alt"></i></span></center>
 	</div>
-	<div class="mid">
+	<div class="centroid">
 		<div id="bottom-container" style="position:absolute;">
 		<div style="position:absolute;" id="container1">
 			
