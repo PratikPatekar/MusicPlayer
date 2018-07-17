@@ -9,124 +9,12 @@
 
     <script type="text/javascript" href="js.js"></script>
 
-    <style type="text/css">
-	 *{
-		margin: 0;
-		padding-left:2px;
-		padding-top: 2px;
-		padding-bottom:2px; 
-		box-sizing: border-box; 
-	}   
-	#player{
-		position: absolute;
-		height: 100%;
-		width: 100%;
-	}    
-    	#top-contents{
-    		font-size: 20px;
-    	}
-	 #bottom-layer{
-	 	position: absolute;   
-		width: 100%; 
-		height:20%;
-		top:80%;
-		    
-	}
-	#middle-layer{
-		height:65%;
-		width: 100%;
-		position: absolute;
-		top:15%;
-	    }
-	#top-layer{
-		height:15%;
-		width: 100%;
-		position: absolute;
-	    }	
-	.left{
-		display: -webkit-box;
-		-webkit-box-flex:1
-		float:left;
-		
-	    }
-	.right{
-		display: -webkit-box;
-		-webkit-box-flex:1
-		float:right;
-		padding-right:10px;
-		
-	    }
-	 .centroid{
-		position:absolute; 
-		left:50%;
-		top:50%;
-		transform:translate(-50%,-50%); 
-	    }    
-	  #volume{
-		  position:absolute;
-		  align-items: vertical;
-	    }  
-    </style>
-
 </head>
+	
 <body>
-
-<div id="player centroid">	
-<div id="top-layer">
-	<div class="left">
-		<center><span id="top-contents" style="text-shadow: 1px 1px 1px grey;"><a href="https://github.com/PratikPatekar"><i class="fas fa-code"></i></a></span></center>
-	</div>
-	<div class="centroid">
-		<center><span id="top-contents">Current Contents</span></center>
-	</div>
-	<div class="right">
-		<center><span id="top-contents" style="text-shadow: 1px 1px 1px grey;"><i class="fas fa-bars"></i></span></center>
-	</div>
-
-
-</div>
-
-<div class="row" id="middle-layer">
-	<div class="left">
-		
-	</div>
-	<div class="centroid">
-		
-	</div>
-	<div class="right">
-		<div id='volume'>
-			<span id='volDown'><span class='fas fa-minus centroid'></span></span>
-				<div id='volumeTrack' class='centroid'>
-					<div id='volSlider' class='centroid'>
-						<span id='volProgress'></span>
-						<span id='volThumb' class='centroid'></span>
-					</div>
-				</div>
-			<span id='volUp'><span class='fas fa-plus centroid'></span></span>
-		</div>	
-	</div>
-</div>
-
-<div class="row" id="bottom-layer">
-	<div class="left">
-		<center><span><i class="fas fa-cloud-download-alt"></i></span></center>
-	</div>
-	<div class="centroid">
-		<div id="bottom-container" style="position:absolute;">
-		<div style="position:absolute;" id="container1">
-			
-		</div>
-		<div style="position:absolute;" id="container2">
-		
-		</div>
-		</div>	
-	</div>
-	<div class="right">
-		<center><span><i class="fas fa-cloud-download-alt"></i></span></center>
-	</div>
-</div>
-</div>
-
+	
+	
+	
 
 </body>
 </html>
