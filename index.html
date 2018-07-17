@@ -61,7 +61,12 @@
 		left:50%;
 		top:50%;
 		transform:translate(-50%,-50%); 
-	    }       
+	    }    
+	  #volume{
+		  display: inline-block;
+		  position:absolute;
+		  align-items: vertical;
+	    }  
     </style>
 
 </head>
@@ -90,7 +95,16 @@
 		
 	</div>
 	<div class="right">
-		<center><span><i class="fas fa-cloud-download-alt"></i></span></center>
+		<div id='volume'>
+			<span id='volDown'><span class='fas fa-minus centroid'></span></span>
+				<div id='volumeTrack' class='centroid'>
+					<div id='volSlider' class='centroid'>
+						<span id='volProgress'></span>
+						<span id='volThumb' class='centroid'></span>
+					</div>
+				</div>
+			<span id='volUp'><span class='fas fa-plus centroid'></span></span>
+		</div>	
 	</div>
 </div>
 
