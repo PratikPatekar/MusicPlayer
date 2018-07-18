@@ -8,11 +8,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <script type="text/javascript" href="js.js"></script>
+	
+    <style>
+	    .centroid{
+	    	position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+	    }    
+	*,body{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body{
+		background:white;
+		color:black;
+	
+	}
+	#left,#mid,#right {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}   
+	#player{
+		display:flex;
+		justify-content:center space-around;
+		align-items:center;
+		
+	}    
+	#top{
+		top:0%;    
+	}
+	#mid{
+		top:15%;    
+	}
+	#bottom{
+		top:80%;    
+	}    
+	    
+    </style>	    
 
 </head>
 	
 <body>
 	
+<div id="player" class="centroid">
+	
+	<div id="top">
+		<div id="left"></div>
+		<div id="mid"></div>
+		<div id="right"></div>
+	</div>
+	
+	<div id="mid">
+		<div id="left"></div>
+		<div id="mid"></div>
+		<div id="right"></div>
+	</div>
+	
+	<div id="bottom">
+		<div id="left"></div>
+		<div id="mid"></div>
+		<div id="right"></div>
+	</div>	
+	
+</div>	
 	
 	
 
