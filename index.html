@@ -168,7 +168,7 @@
 		</div>
 		<div id="right">
 			<div class="voltrack">
-  				<input type="range" min="0" max="100" value="0" class="vol" id="volumebar">
+  				<input type="range" min="0" max="100" value="0" class="volbar" id="volume">
 				<center><span>Value: <span id="out"></span></center>
 			</div>
 		</div>
@@ -191,12 +191,12 @@
 </div>	
 	
 	<script>
-		var bar = document.getElementById("volumebar");
+		var vol = document.getElementById("volume");
 		var output = document.getElementById("out");
-		output.innerHTML = bar.value; // Display the default slider value
+		output.innerHTML = vol.value; // Display the default slider value
 
 		// Update the current slider value (each time you drag the slider handle)
-		bar.oninput = function() {
+		vol.oninput = function() {
     		output.innerHTML = this.value;
 		}
 	</script>
