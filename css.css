@@ -86,6 +86,9 @@
 		justify-content:center;
 		align-items:center;
 		flex:1;
+		flex-direction:row;
+		height:100%;
+		width:100%;
 	}
 	.track {
     		width: 100%;
@@ -163,10 +166,7 @@
 		display:flex;
 		justify-content:center;
 		align-items:center;
-		flex:1;
-		flex-direction:row;
-		height:100%;
-		width:100%;
+		flex:1;		
 	}
 	#playlist{
 		display:flex;
