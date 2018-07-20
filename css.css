@@ -164,7 +164,9 @@
 		justify-content:center;
 		align-items:center;
 		flex:1;
-		flex-wrap:wrap;
+		flex-direction:row;
+		height:100%;
+		width:100%;
 	}
 	#playlist{
 		display:flex;
