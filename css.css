@@ -190,7 +190,7 @@
 		font-size:medium;
 	}
 	@media (orientation:landscape) and (max-width: 767px) {
-   	.voltrack,.midleft {
+   	.voltrack,.midleft,#lb,#rb {
       		display: none; /* visibility: none; */
    		    }
 	}
