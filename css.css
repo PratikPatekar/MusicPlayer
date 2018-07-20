@@ -160,6 +160,13 @@
 		width:100%;
 		flex-direction:column;
 		overflow:hidden;
+	}
+	.songslist{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		flex:1;
+		flex-direction:column;
 		height:20px;
 		padding:5px;
 	}
