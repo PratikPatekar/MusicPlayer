@@ -79,7 +79,7 @@ window.onload = function(){
 var initiate = {
 	playlist : function(songslist){
 		for(var i=0;i<songslist.length;++i){
-			playlist.innerHTML += '<div id='+i+' class="songslist"><span>'+data.songs[i]+'</span></div>';
+			playlist.innerHTML += '<div id='+i+' class="songarray"><span>'+data.songs[i]+'</span></div>';
 		}	
 	},
 };	
