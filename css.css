@@ -188,6 +188,8 @@
 		align-items:center;
 		flex:1;
 		position:relative;
+		padding-top:10px;
+		padding-bottom:10px;
 	}
 	@media (orientation:landscape) and (max-width: 767px) {
    	.voltrack,.midleft,#lb,#rb {
