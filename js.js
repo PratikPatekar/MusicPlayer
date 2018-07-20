@@ -24,6 +24,14 @@ data = {
 		"You & I",
 		"Find my way back to you",
 		"What makes you beautiful",
+		"You can be king again",
+		"Treat You Better",
+		"Stitches",
+		"Back to You",
+		"Girls Like You",
+		"You & I",
+		"Find my way back to you",
+		"What makes you beautiful",
 		"You can be king again"
 		
 	],
