@@ -87,15 +87,6 @@
 		align-items:center;
 		flex-direction:row;
 	}
-	#lb{
-		flex:1;
-	}
-	#mb{
-		flex:2;
-	}
-	#rb{
-		flex:1;
-	}
 	.track {
     		width: 100%;
 		display:flex;
