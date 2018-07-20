@@ -122,6 +122,7 @@
 		display:flex;
 		justify-content:center;
 		align-items:center;
+		flex-direction:column;
 	}   
 	 .volbar {
 		 position:absolute;
@@ -150,7 +151,17 @@
 		background:#0000A0;
     		cursor: pointer;
 	}       
-	    
+	#VolumeTrack,#VolumeValue{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}    
+	#VolumeTrack{
+		flex:9;    
+	}    
+	#VolumeValue{
+		flex:1;	
+	}	
 	    
     </style>	    
 
@@ -181,8 +192,12 @@
 		</div>
 		<div id="right">
 			<div class="voltrack">
-  				<input type="range" min="0" max="100" value="0" class="volbar" id="volume"><br>
-				<center><span>Volume: <span id="out"></span></span></center>
+  				<div id="VolumeTrack">
+					<input type="range" min="0" max="100" value="0" class="volbar" id="volume">
+				</div>
+				<div id="VolumeValue">
+					<span>Volume: <span id="out"></span></span>
+				</div>
 			</div>
 		</div>
 	</div>
