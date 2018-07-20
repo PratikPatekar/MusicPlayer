@@ -86,6 +86,7 @@
 		display:flex;
 		justify-content:center;
 		align-content:center;
+		flex-direction:row;
 	}
 	#lb{
 		flex:1;
