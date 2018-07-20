@@ -140,17 +140,12 @@
 		background:#0000A0;
     		cursor: pointer;
 	}       
-	#VolumeTrack,#VolumeValue{
+	#VolumeTrack{
 		display:flex;
 		justify-content:center;
 		align-items:center;
-	}    
-	#VolumeTrack{
-		flex:6;    
-	}    
-	#VolumeValue{
-		flex:4;	
-	}	
+		flex:1;
+	}
 	#playlist{
 		display:flex;
 		justify-content:center;
