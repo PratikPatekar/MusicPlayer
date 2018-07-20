@@ -85,7 +85,33 @@
 	}
 	i{
 		font-size:25px;    
+	}  
+	.volume {
+    		width: 100%;
+	}	
+	.bar {
+		-webkit-appearance: none;
+    		appearance: none;
+    		width: 100%;
+    		height: 25px;
+    		background: #d3d3d3;
+    		outline: none; 
+    		opacity: 0.7;
+   		 -webkit-transition: .2s;
+    		transition: opacity .2s;
+	}
+	.bar:hover {
+    		opacity: 1;	
+	}
+	.bar::-webkit-slider-thumb {
+    		-webkit-appearance: none;
+    		appearance: none;
+    		width: 25px;
+    		height: 25px; 
+		background:#00FFFF;
+    		cursor: pointer;
 	}    
+	    
 	    
     </style>	    
 
@@ -115,7 +141,9 @@
 			<span>Songs List goes here.</span>
 		</div>
 		<div id="right">
-			<span>Volume Bar goes here.</span>
+			<div class="volume">
+  				<input type="range" min="0" max="100" value="0" class="bar" id="volumebar">
+			</div>
 		</div>
 	</div>
 	
