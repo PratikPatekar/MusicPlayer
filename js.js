@@ -16,7 +16,15 @@ data = {
 		"I wanna grow old with you",
 		"Firework",
 		"Good Times",
-		"Kaze - Naruto"
+		"Kaze - Naruto",
+		"Treat You Better",
+		"Stitches",
+		"Back to You",
+		"Girls Like You",
+		"You & I",
+		"Find my way back to you",
+		"What makes you beautiful",
+		"You can be king again"
 		
 	],
 
