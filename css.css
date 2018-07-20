@@ -159,8 +159,8 @@
 	.songarray{
 		display:inline-block;
 		height:20px;
-		padding-top:40px;
-		padding-bottom:3px;
+		padding-top:50px;
+		padding-bottom:5px;
 		font-size:20px;
 	}
 	@media (orientation:landscape) and (max-width: 767px) {
