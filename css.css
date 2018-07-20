@@ -173,22 +173,18 @@
 		width:100%;
 	}
 	#playlist{
+		overflow:auto;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		height:100%;
+		width:100%;
+	}
+	.songarray{
 		display:flex;
 		justify-content:center;
 		align-items:center;
 		flex:1;
-		height:100%;
-		width:100%;
-		flex-direction:column;
-		overflow:auto;
-	}
-	.songarray{
-		display:flex;
-		height:40%;
-		width:100%;
-		font-size:medium;
-		justify-content:center;
-		align-items:center;
 	}
 	@media (orientation:landscape) and (max-width: 767px) {
    	.voltrack,.midleft,#lb,#rb {
