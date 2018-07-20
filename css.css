@@ -159,6 +159,13 @@
 		align-items:center;
 		flex:1;
 	}
+	#lb,#mb,#rb{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		flex:1;
+		flex-wrap:wrap;
+	}
 	#playlist{
 		display:flex;
 		justify-content:center;
