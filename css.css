@@ -156,7 +156,7 @@
 		flex-direction:column;
 		overflow:hidden;
 	}
-	.songslist{
+	.songarray{
 		display:flex;
 		justify-content:center;
 		align-items:center;
