@@ -160,5 +160,6 @@
 		width:100%;
 		flex-direction:column;
 		overflow:hidden;
-		height:30px;
+		height:20px;
+		padding:5px;
 	}
