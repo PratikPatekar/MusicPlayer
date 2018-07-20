@@ -165,6 +165,8 @@
 		height:20px;
 		padding-top:3px;
 		padding-bottom:3px;
+		flex-wrap:nowrap;
+		font-size:20px;
 	}
 	@media (orientation:landscape) and (max-width: 767px) {
    	.voltrack {
