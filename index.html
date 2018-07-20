@@ -113,7 +113,7 @@
 		background:#0000A0;
     		cursor: pointer;
 	}      
-	 .vol {
+	 .volbar {
 		-webkit-appearance: slider-vertical
     		appearance: none;
     		width: 100%;
@@ -125,10 +125,10 @@
    		 -webkit-transition: .2s;
     		transition: opacity .2s;
 	}
-	.vol:hover {
+	.volbar:hover {
     		opacity: 1;	
 	}
-	.vol::-webkit-slider-thumb {
+	.volbar::-webkit-slider-thumb {
     		-webkit-appearance: none;
     		appearance: none;
     		width: 25px;
@@ -191,12 +191,12 @@
 </div>	
 	
 	<script>
-		var vol = document.getElementById("volume");
+		var volbar = document.getElementById("volume");
 		var output = document.getElementById("out");
-		output.innerHTML = vol.value; // Display the default slider value
+		output.innerHTML = volbar.value; // Display the default slider value
 
 		// Update the current slider value (each time you drag the slider handle)
-		vol.oninput = function() {
+		volbar.oninput = function() {
     		output.innerHTML = this.value;
 		}
 	</script>
