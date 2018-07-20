@@ -86,7 +86,7 @@
 	i{
 		font-size:25px;    
 	}  
-	.volume {
+	.track {
     		width: 100%;
 	}	
 	.bar {
@@ -109,7 +109,7 @@
     		appearance: none;
     		width: 25px;
 		border-radius: 50%;
-    		height: 20px; 
+    		height: 21px; 
 		background:#0000A0;
     		cursor: pointer;
 	}    
@@ -143,7 +143,7 @@
 			<span>Songs List goes here.</span>
 		</div>
 		<div id="right">
-			<div class="volume">
+			<div class="track">
   				<input type="range" min="0" max="100" value="0" class="bar" id="volumebar">
 			</div>
 		</div>
@@ -154,9 +154,11 @@
 			<span><a href="https://github.com/PratikPatekar/"><i class="fab fa-github"></i></a></span>
 		</div>
 		<div id="mid">
-			<div class="volume">
+			<div class="track">
   				<input type="range" min="0" max="100" value="0" class="bar" id="volumebar">
 			</div>
+			<br>
+			<span id="out"></span>
 		</div>
 		<div id="right">
 			<span><i class="fas fa-download"></i></span>
@@ -165,6 +167,16 @@
 	
 </div>	
 	
+	<script>
+		var bar = document.getElementById("volumebar");
+		var output = document.getElementById("out");
+		output.innerHTML = slider.value; // Display the default slider value
+
+		// Update the current slider value (each time you drag the slider handle)
+		bar.oninput = function() {
+    		output.innerHTML = this.value;
+		}
+	</script>
 	
 
 </body>
