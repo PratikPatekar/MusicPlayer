@@ -74,19 +74,6 @@
 	i{
 		font-size:25px;    
 	}  
-	.bottom-layer{
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		flex-direction:column;
-		flex-wrap:nowrap;
-	}
-	#buttons > div{
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		flex-direction:row;
-	}
 	.track {
     		width: 100%;
 		display:flex;
@@ -156,23 +143,6 @@
     		cursor: pointer;
 	}       
 	#VolumeTrack{
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		flex:1;
-	}
-	#playlist{
-		overflow-x:auto;
-		overflow-y:scroll;
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		height:100%;
-		width:100%;
-		flex-direction:column;
-		
-	}
-	.songarray{
 		display:flex;
 		justify-content:center;
 		align-items:center;
