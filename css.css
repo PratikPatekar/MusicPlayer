@@ -149,16 +149,21 @@
 		flex:1;
 	}
 	#playlist{
-		overflow:auto;
-		max-height:100%;
-		width:100%;
-		display:flex;
-		justify-content:center;
-		align-content:center;
-		flex:1;
-		position:relative;
+		    overflow: auto;
+		    max-height: 100%;
+		    display: inline-grid;
+		    justify-content: center;
+		    align-items: center;
+		    width: 100%;
+		    position: relative;
+		    flex-direction: column;
+		    padding-bottom: 5px;
+		    padding-top: 5px;
 	}
-
+	.songarray{
+		padding-top:7px;
+		padding-bottom:7px;
+	}
 
 	@media (orientation:landscape) and (max-width: 767px) {
    	.voltrack,.midleft,#lb,#rb {
