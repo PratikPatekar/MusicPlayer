@@ -1,28 +1,3 @@
-data = {
-	"songs":[
-		"Treat You Better",
-		"Stitches",
-		"Back to You",
-		"Girls Like You",
-		"You & I",
-		"Find my way back to you",
-		"What makes you beautiful",
-		"You can be king again",
-		"Hall fo fame",
-		"Darasal",
-		"Subhanallah",
-		"Where my love goes",
-		"Wonder Woman Theme Song",
-		"I wanna grow old with you",
-		"Firework",
-		"Good Times",
-		"Kaze - Naruto"
-		
-	],
-
-};
-
-
 
 var prev = document.getElementById('prev');
 var play = document.getElementById('play');
@@ -105,7 +80,7 @@ function update(){
 var initiate = {
 	song : function(index){
 		//song.pause();
-		song.src = js.url + js.songs[index] + '.mp3';
+		song.src = data.url + data.songs[index] + '.mp3';
 		
 		download.setAttribute('href',song.src);
 		
