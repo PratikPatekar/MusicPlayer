@@ -1,0 +1,26 @@
+data = {
+
+  "url": "songs/",
+
+	"songs":[
+		"Treat You Better",
+		"Stitches",
+		"Back to You",
+		"Girls Like You",
+		"You & I",
+		"Find my way back to you",
+		"What makes you beautiful",
+		"You can be king again",
+		"Hall fo fame",
+		"Darasal",
+		"Subhanallah",
+		"Where my love goes",
+		"Wonder Woman Theme Song",
+		"I wanna grow old with you",
+		"Firework",
+		"Good Times",
+		"Kaze - Naruto"
+		
+	],
+
+};
