@@ -38,7 +38,7 @@ var playlist = document.getElementById('playlist');
 var thumb = document.getElementById('thumb');
 var track = document.getElementById('track');
 var volThumb = document.getElementById('volume');
-var volProgress = document.getElementById('volume');
+var volProgress = document.getElementById('volumeprogress');
 
 
 track.onclick = function(e){
