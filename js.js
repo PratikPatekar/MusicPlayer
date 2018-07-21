@@ -32,13 +32,10 @@ var header = document.getElementById('header');
 var duration = document.getElementById('duration');
 var download = document.getElementById('download');
 var currentTime = document.getElementById('currentTime');
-var progress = document.getElementById('progress');
 var playlist = document.getElementById('playlist');
-
 var thumb = document.getElementById('thumb');
 var track = document.getElementById('track');
 var volThumb = document.getElementById('volume');
-var volProgress = document.getElementById('volumeprogress');
 
 
 track.onclick = function(e){
@@ -100,7 +97,7 @@ function update(){
 	currentTime.innerHTML = '<span>'+getTimeString(Math.floor(song.currentTime))+'</span>';
 	
 	trackvalue = (song.currentTime/song.duration)*100;
-	progress.style.width = trackvalue + '%';
+	
 	thumb.style.left = trackvalue +'%';
 	
 }
@@ -134,7 +131,6 @@ function changeVol(evt,obj){
 		
 	song.volume = (1+(evt.x-max)/(max-min));
 	
-	volProgress.style.width = song.volume*100 + '%';
 	volThumb.style.left = song.volume*100 +'%';
 }
 
