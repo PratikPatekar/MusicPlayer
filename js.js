@@ -9,7 +9,7 @@ var download = document.getElementById('download');
 var currentTime = document.getElementById('currentTime');
 var playlist = document.getElementById('playlist');
 var thumb = document.getElementById('thumb');
-var track = document.getElementById('track');
+var track = document.getElementById('progress');
 var volThumb = document.getElementById('volume');
 
 
@@ -21,8 +21,7 @@ track.onclick = function(e){
 	song.currentTime = (current/100)*song.duration;
 	
 	trackvalue = (song.currentTime/song.duration)*100;
-	progress.style.width = trackvalue + '%';
-	thumb.style.left = trackvalue +'%';
+	track.value = trackvalue +'%';
 }
 
 play.onclick = function(){
