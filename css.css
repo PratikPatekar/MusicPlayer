@@ -90,7 +90,7 @@
     		border-radius: 15px;
     		background: #212121;
 	}
-	#progress{
+/*	#progress{
 		position: absolute;
 		left: 0;
 		height: 100%;
@@ -107,7 +107,7 @@
 	    	display: inline-block;
 	    	transition: all 0.1s ease;
 	    	left: 0;
-	}
+	} */
 	.voltrack{
 		height:100%;    
 		width:100%;
