@@ -98,9 +98,15 @@
 	.bar:hover {
     		opacity: 1;	
 	}
-	#progress{
-		width:100%;
-	}
+	.bar::-webkit-slider-thumb {
+    		-webkit-appearance: none;
+    		appearance: none;
+    		width: 20px;
+		border-radius: 50%;
+    		height: 20px; 
+		background:#0000A0;
+    		cursor: pointer;
+	}   
 	.voltrack{
 		height:100%;    
 		width:100%;
