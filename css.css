@@ -100,15 +100,19 @@
 	}
 	#thumb{
 		width: 10px;
-		    height: 10px;
-		    background: #212121;
-		    border-radius: 50%;
-		    border: 1px solid black;
-		    position: absolute;
-		    display: inline-block;
-		    transition: all 0.1s ease;
-	}
+		height: 10px;
+		background: #212121;
+		border-radius: 50%;
+		border: 1px solid black;
+		position: absolute;
+		display: inline-block;
+		transition: all 0.1s ease;
 	}   
+	#progress{
+		width:100%;
+		border-radius: 2px;
+    		background: #00bcd4;
+	}
 	.voltrack{
 		height:100%;    
 		width:100%;
