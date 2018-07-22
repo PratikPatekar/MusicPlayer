@@ -92,27 +92,21 @@
 		border-radius: 15px;
     		outline: none; 
     		opacity: 0.7;
-   		-webkit-transition: .2s;
+   		 -webkit-transition: .2s;
     		transition: opacity .2s;
 	}
 	.bar:hover {
     		opacity: 1;	
 	}
-	#thumb{
-		width: 10px;
-		height: 10px;
-		background: #212121;
+	.bar::-webkit-slider-thumb {
+    		-webkit-appearance: none;
+    		appearance: none;
+    		width: 20px;
 		border-radius: 50%;
-		border: 1px solid black;
-		position: absolute;
-		display: inline-block;
-		transition: all 0.1s ease;
+    		height: 20px; 
+		background:#0000A0;
+    		cursor: pointer;
 	}   
-	#progress{
-		width:100%;
-		border-radius: 2px;
-    		background: #00bcd4;
-	}
 	.voltrack{
 		height:100%;    
 		width:100%;
