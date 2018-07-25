@@ -22,7 +22,7 @@ var volThumb = document.getElementById('volume');
 //}
 
 //Audio EventListners
-track.onchange = prog(event);
+
 
 song.onloadstart = function(){
 	//alert('loadstart');
@@ -94,6 +94,8 @@ function getTimeString(sec){
 function random(a,b){
 	return a + (b-a)*Math.random();
 }
+
+track.onchange = prog(event);
 
 function prog(e){
 	song.currentTime = (this.value*song.duration)/100;
