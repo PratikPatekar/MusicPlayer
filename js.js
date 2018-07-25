@@ -22,7 +22,7 @@ var volThumb = document.getElementById('volume');
 //}
 
 //Audio EventListners
-track.onchange = progress(event);
+track.onchange = prog(event);
 
 song.onloadstart = function(){
 	//alert('loadstart');
@@ -95,8 +95,12 @@ function random(a,b){
 	return a + (b-a)*Math.random();
 }
 
-function progress(e){
-	song.currentTime = this.value*song.duration/100;
+function prog(e){
+	if (typeof song.duration === "undefined"){
+    console.log('the property is not available...'); // print into console
+}
+
+	song.currentTime = (this.value*song.duration)/100;
 }
 
 
