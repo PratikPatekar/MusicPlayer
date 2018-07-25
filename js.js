@@ -52,7 +52,6 @@ window.onload = function(){
 	
 	data.songs.sort();
 	
-	initiate.playlist(data.songs);
 	initiate.song(currentIndex);
 	song.pause();
 	
