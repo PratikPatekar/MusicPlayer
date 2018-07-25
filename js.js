@@ -3,7 +3,6 @@ var prev = document.getElementById('prev');
 var play = document.getElementById('play');
 var next = document.getElementById('next');
 var trackTitle = document.getElementById('trackTitle');
-var header = document.getElementById('header');
 var duration = document.getElementById('duration');
 var download = document.getElementById('download');
 var currentTime = document.getElementById('currentTime');
@@ -11,18 +10,6 @@ var playlist = document.getElementById('playlist');
 var thumb = document.getElementById('thumb');
 var track = document.getElementById('progress');
 var volThumb = document.getElementById('volume');
-
-
-track.onclick = function(e){
-	var trackRect = track.getBoundingClientRect();
-	var max = trackRect.right;
-	var min = trackRect.left;
-	var current = (1+(e.x-max)/(max-min))*100;
-	song.currentTime = (current/100)*song.duration;
-	
-	trackvalue = (song.currentTime/song.duration)*100;
-	track.value = trackvalue +'%';
-}
 
 play.onclick = function(){
 	if(song.paused){
@@ -95,17 +82,6 @@ function changeSong(div){
 	currentIndex = parseInt(div.id,10);
 	initiate.song(currentIndex);
 	play.innerHTML = '<span class="fas fa-pause"></span>';
-}
-
-function changeVol(evt,obj){
-	
-	var trackRect = obj.getBoundingClientRect();
-	var max = trackRect.right;
-	var min = trackRect.left;
-		
-	song.volume = (1+(evt.x-max)/(max-min));
-	
-	volThumb.style.left = song.volume*100 +'%';
 }
 
 function getTimeString(sec){
