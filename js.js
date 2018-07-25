@@ -11,6 +11,10 @@ var thumb = document.getElementById('thumb');
 var track = document.getElementById('progress');
 var volThumb = document.getElementById('volume');
 
+var index= 0;
+var song = new Audio();
+var interval;
+
 //play.onclick = function(){
 	//if(song.paused){
 		//song.play();
@@ -100,11 +104,6 @@ track.onchange = prog(event);
 function prog(e){
 	song.currentTime = (this.value*song.duration)/100;
 }
-
-
-var index= 0;
-var song = new Audio();
-var interval;
 
 window.onload = function(){
 	
