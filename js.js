@@ -11,17 +11,19 @@ var thumb = document.getElementById('thumb');
 var track = document.getElementById('progress');
 var volThumb = document.getElementById('volume');
 
-play.onclick = function(){
-	if(song.paused){
-		song.play();
-		play.innerHTML = '<span class="fas fa-pause></span>';
-	}else{
-		song.pause();
-		play.innerHTML = '<span class="fas fa-play></span>';
-	}
-}
+//play.onclick = function(){
+	//if(song.paused){
+		//song.play();
+		//play.innerHTML = '<span class="fas fa-pause></span>';
+	//}else{
+		//song.pause();
+		//play.innerHTML = '<span class="fas fa-play></span>';
+	//}
+//}
 
 //Audio EventListners
+track.onchange = progress(event);
+
 song.onloadstart = function(){
 	//alert('loadstart');
 }
@@ -57,10 +59,7 @@ function update(){
 	
 	currentTime.innerHTML = '<span>'+getTimeString(Math.floor(song.currentTime))+'</span>';
 	
-	trackvalue = (song.currentTime/song.duration)*100;
-	
-	thumb.style.left = trackvalue +'%';
-	
+	track.value = Math.floor((song.currentTime/song.duration)*100);
 }
 
 var initiate = {
@@ -96,6 +95,9 @@ function random(a,b){
 	return a + (b-a)*Math.random();
 }
 
+function progress(e){
+	song.currentTime = this.value*song.duration/100;
+}
 
 
 var index= 0;
