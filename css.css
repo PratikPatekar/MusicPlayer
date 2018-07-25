@@ -164,6 +164,14 @@
 		padding-top:7px;
 		padding-bottom:7px;
 	}
+	#duration{
+		height:100%;
+		width:100%;
+	}
+	#currentTime{
+		height:100%;
+		width:100%;
+	}
 
 	@media (orientation:landscape) and (max-width: 767px) {
    	.voltrack,.midleft,#lb,#rb {
