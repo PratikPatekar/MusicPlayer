@@ -96,10 +96,6 @@ function random(a,b){
 }
 
 function prog(e){
-	if (typeof song.duration === "undefined"){
-    console.log('the property is not available...'); // print into console
-}
-
 	song.currentTime = (this.value*song.duration)/100;
 }
 
