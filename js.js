@@ -54,7 +54,6 @@ window.onload = function(){
 	initiate.playlist(data.songs);
 	initiate.song(currentIndex);
 	song.pause();
-	
 	interval = setInterval(update,1000);
 }
 
