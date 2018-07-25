@@ -11,7 +11,7 @@ var thumb = document.getElementById('thumb');
 var track = document.getElementById('progress');
 var volThumb = document.getElementById('volume');
 
-var index= 0;
+var currentIndex= 0;
 var song = new Audio();
 var interval;
 
