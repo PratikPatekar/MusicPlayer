@@ -51,7 +51,7 @@ song.onended = function(){
 window.onload = function(){
 	
 	data.songs.sort();
-	
+	initiate.playlist(data.songs);
 	initiate.song(currentIndex);
 	song.pause();
 	
@@ -66,6 +66,13 @@ function update(){
 }
 
 var initiate = {
+	
+	playlist : function(songslist){
+		for(var i=0;i<songslist.length;++i){
+			playlist.innerHTML += '<div id='+i+' class="songarray"><span>'+data.songs[i]+'</span></div>';
+		}	
+	},
+	
 	song : function(index){
 		//song.pause();
 		song.src = data.url + data.songs[index] + '.mp3';
@@ -102,21 +109,7 @@ track.onchange = prog(event);
 
 function prog(e){
 	song.currentTime = (this.value*song.duration)/100;
-}
-
-window.onload = function(){
-	
-	initiate.playlist(data.songs);
-	
 }	
-
-var initiate = {
-	playlist : function(songslist){
-		for(var i=0;i<songslist.length;++i){
-			playlist.innerHTML += '<div id='+i+' class="songarray"><span>'+data.songs[i]+'</span></div>';
-		}	
-	},
-};	
 
 /*      *****Volume bar Value******
 
