@@ -70,7 +70,7 @@ var initiate = {
 		//song.pause();
 		song.src = data.url + data.songs[index] + '.mp3';
 		
-		download.setAttribute('href',song.src);
+		//download.setAttribute('href',song.src);
 		
 		song.load();
 		song.play();
