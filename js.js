@@ -48,15 +48,6 @@ song.onended = function(){
 		initiate.song(currentIndex);
 }
 
-window.onload = function(){
-	
-	data.songs.sort();
-	initiate.playlist(data.songs);
-	initiate.song(currentIndex);
-	song.pause();
-	interval = setInterval(update,1000);
-}
-
 function update(){
 	
 	currentTime.innerHTML = '<span>'+getTimeString(Math.floor(song.currentTime))+'</span>';
@@ -85,6 +76,15 @@ var initiate = {
 		
 	}
 };
+
+window.onload = function(){
+	
+	data.songs.sort();
+	initiate.playlist(data.songs);
+	initiate.song(currentIndex);
+	song.pause();
+	interval = setInterval(update,1000);
+}
 
 function changeSong(div){
 	currentIndex = parseInt(div.id,10);
