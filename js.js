@@ -74,7 +74,7 @@ var initiate = {
 	
 	song : function(index){
 		//song.pause();
-		song.src = data.url + data.songs[index] + '.mp3';
+		song.src = data.url + data.songs[currentIndex] + '.mp3';
 		
 		//download.setAttribute('href',song.src);
 		
