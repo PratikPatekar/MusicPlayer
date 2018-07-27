@@ -108,7 +108,8 @@ function random(a,b){
 track.onchange = prog();
 
 function prog(){
-	song.currentTime = (this.value*song.duration)/100;
+	alert(this.value);
+	//song.currentTime = (this.value*song.duration)/100;
 }	
 
 /*      *****Volume bar Value******
