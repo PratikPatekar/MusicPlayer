@@ -104,9 +104,9 @@ function random(a,b){
 	return a + (b-a)*Math.random();
 }
 
-track.onchange = prog(event);
+track.onchange = prog();
 
-function prog(e){
+function prog(){
 	song.currentTime = (this.value*song.duration)/100;
 }	
 
