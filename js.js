@@ -6,7 +6,6 @@ var trackTitle = document.getElementById('trackTitle');
 var duration = document.getElementById('duration');
 var download = document.getElementById('download');
 var currentTime = document.getElementById('currentTime');
-var playlist = document.getElementById('playlist');
 var thumb = document.getElementById('thumb');
 var track = document.getElementById('progress');
 var volThumb = document.getElementById('volume');
@@ -33,7 +32,7 @@ var initiate = {
 	
 	playlist : function(songslist){
 		for(var i=0;i<songslist.length;++i){
-			document.getElementById('mid').innerHTML += '<div id='+i+' class="songarray"><span>'+data.songs[i]+'</span></div>';
+			document.getElementById('slist').innerHTML += '<div id='+i+' class="songarray"><span>'+data.songs[i]+'</span></div>';
 		}	
 	},
 	
