@@ -87,8 +87,8 @@ window.onload = function(){
 	interval = setInterval(update,1000);
 }
 
-function changeSong(id){
-	currentIndex = parseInt(id,10);
+function changeSong(obj1){
+	currentIndex = parseInt(obj1.id,10);
 	initiate.song(currentIndex);
 	if(song.paused){
 		song.play();
