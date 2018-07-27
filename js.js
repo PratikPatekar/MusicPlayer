@@ -33,7 +33,7 @@ var initiate = {
 	
 	playlist : function(songslist){
 		for(var i=0;i<songslist.length;++i){
-			plist.innerHTML += '<div id='+i+' onclick='changeSong(this.id)' class="songarray"><span>'+data.songs[i]+'</span></div>';
+			plist.innerHTML += '<div id='+i+' onclick='changeSong(this)' class="songarray"><span>'+data.songs[i]+'</span></div>';
 		}	
 	},
 	
