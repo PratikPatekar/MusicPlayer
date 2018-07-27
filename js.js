@@ -75,7 +75,7 @@ function update(){
 	
 	currentTime.innerHTML = '<span>'+getTimeString(Math.floor(song.currentTime))+'</span>';
 	
-	//track.value = Math.floor((song.currentTime/song.duration)*100);
+	track.value = Math.floor((song.currentTime/song.duration)*100);
 }
 
 window.onload = function(){
