@@ -33,7 +33,7 @@ var initiate = {
 	
 	playlist : function(songslist){
 		for(var i=0;i<songslist.length;++i){
-			playlist.innerHTML += '<div id='+i+' class="songarray"><span>'+data.songs[i]+'</span></div>';
+			document.getElementById('mid').innerHTML += '<div id='+i+' class="songarray"><span>'+data.songs[i]+'</span></div>';
 		}	
 	},
 	
