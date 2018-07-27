@@ -38,10 +38,10 @@ var initiate = {
 	},
 	
 	song : function(index){
-		song.pause();
+		//song.pause();
 		song.src = data.url + data.songs[currentIndex] + '.mp3';
 		
-		//download.setAttribute('href',song.src);
+		download.setAttribute('href',song.src);
 		
 		song.load();
 		song.play();
@@ -83,7 +83,7 @@ window.onload = function(){
 	data.songs.sort();
 	initiate.playlist(data.songs);
 	initiate.song(currentIndex);
-	song.pause();
+	//song.pause();
 	interval = setInterval(update,1000);
 }
 
