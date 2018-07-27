@@ -148,7 +148,7 @@
 		align-items:center;
 		flex:1;
 	}
-	#playlist{
+	#slist{
 		    overflow: auto;
 		    max-height: 100%;
 		    display: inline-grid;
