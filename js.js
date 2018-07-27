@@ -108,8 +108,8 @@ function random(a,b){
 //track.onchange = prog();
 
 function prog(obj){
-	alert(obj.value);
-	song.currentTime = (obj.value*song.duration)/100;
+	//alert(obj.value);
+	song.currentTime = (obj.value/100)*song.duration;
 }	
 
 /*      *****Volume bar Value******
