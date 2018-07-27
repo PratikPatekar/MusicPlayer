@@ -38,7 +38,7 @@ var initiate = {
 	},
 	
 	song : function(index){
-		//song.pause();
+		song.pause();
 		song.src = data.url + data.songs[currentIndex] + '.mp3';
 		
 		//download.setAttribute('href',song.src);
@@ -90,7 +90,11 @@ window.onload = function(){
 function changeSong(div){
 	currentIndex = parseInt(div.id,10);
 	initiate.song(currentIndex);
-	play.innerHTML = '<span class="fas fa-pause"></span>';
+	if(song.paused){
+		song.play();
+	}else{
+		song.pause();
+	}
 }
 
 function getTimeString(sec){
