@@ -167,10 +167,12 @@
 	#duration{
 		height:100%;
 		width:100%;
+		align-items:center;
 	}
 	#currentTime{
 		height:100%;
 		width:100%;
+		align-items:center;
 	}
 
 	@media (orientation:landscape) and (max-width: 767px) {
