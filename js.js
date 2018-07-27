@@ -1,7 +1,7 @@
 
-var prev = document.getElementById('prev');
-var play = document.getElementById('play');
-var next = document.getElementById('next');
+
+
+
 var duration = document.getElementById('duration');
 var download = document.getElementById('download');
 var currentTime = document.getElementById('currentTime');
@@ -11,17 +11,17 @@ var volThumb = document.getElementById('volume');
 var plist = document.getElementById('slist');
 var midtitle = document.getElementById('trackTitle');
 
-var currentIndex= 10;
+var currentIndex= 0;
 var song = new Audio();
 var interval;
 
-//play.onclick = function(){
+//sname.onclick = function(){
 	//if(song.paused){
 		//song.play();
-		//play.innerHTML = '<span class="fas fa-pause></span>';
+		
 	//}else{
 		//song.pause();
-		//play.innerHTML = '<span class="fas fa-play></span>';
+		
 	//}
 //}
 
