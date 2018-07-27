@@ -11,7 +11,7 @@ var volThumb = document.getElementById('volume');
 var plist = document.getElementById('slist');
 var midtitle = document.getElementById('trackTitle');
 
-var currentIndex= 0;
+var currentIndex= 10;
 var song = new Audio();
 var interval;
 
