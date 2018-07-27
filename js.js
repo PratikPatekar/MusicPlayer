@@ -109,7 +109,7 @@ function random(a,b){
 
 function prog(obj){
 	//alert(obj.value);
-	song.currentTime = (obj.value/100)*song.duration;
+	song.currentTime = Math.floor((obj.value/100)*song.duration);
 }	
 
 /*      *****Volume bar Value******
