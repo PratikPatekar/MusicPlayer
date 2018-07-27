@@ -108,7 +108,7 @@ function random(a,b){
 //track.onchange = prog();
 
 function prog(obj){
-	//alert(this.value);
+	alert(this.value);
 	song.currentTime = (obj.value*song.duration)/100;
 }	
 
