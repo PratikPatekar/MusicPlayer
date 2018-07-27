@@ -2,7 +2,6 @@
 var prev = document.getElementById('prev');
 var play = document.getElementById('play');
 var next = document.getElementById('next');
-var trackTitle = document.getElementById('trackTitle');
 var duration = document.getElementById('duration');
 var download = document.getElementById('download');
 var currentTime = document.getElementById('currentTime');
@@ -45,7 +44,7 @@ var initiate = {
 		song.load();
 		song.play();
 		
-		trackTitle.innerHTML = '<span> '+data.songs[currentIndex]+' </span>';
+		document.getElementById('trackTitle').innerHTML = '<span> '+data.songs[currentIndex]+' </span>';
 		
 	}
 };
