@@ -8,6 +8,8 @@ var currentTime = document.getElementById('currentTime');
 var thumb = document.getElementById('thumb');
 var track = document.getElementById('progress');
 var volThumb = document.getElementById('volume');
+var plist = document.getElementById('slist');
+var midtitle = document.getElementById('trackTitle');
 
 var currentIndex= 0;
 var song = new Audio();
@@ -31,7 +33,7 @@ var initiate = {
 	
 	playlist : function(songslist){
 		for(var i=0;i<songslist.length;++i){
-			document.getElementById('slist').innerHTML += '<div id='+i+' class="songarray"><span>'+data.songs[i]+'</span></div>';
+			plist.innerHTML += '<div id='+i+' class="songarray"><span>'+data.songs[i]+'</span></div>';
 		}	
 	},
 	
@@ -44,7 +46,7 @@ var initiate = {
 		song.load();
 		song.play();
 		
-		document.getElementById('trackTitle').innerHTML = '<span> '+data.songs[currentIndex]+' </span>';
+		midtitle.innerHTML = '<span> '+data.songs[currentIndex]+' </span>';
 		
 	}
 };
