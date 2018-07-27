@@ -33,7 +33,7 @@ var initiate = {
 	
 	playlist : function(songslist){
 		for(var i=0;i<songslist.length;++i){
-			plist.innerHTML += '<div id='+i+' onclick='changeSong(this)' class="songarray"><span>'+data.songs[i]+'</span></div>';
+			plist.innerHTML += '<div id='+i+' onclick="changeSong(this)" class="songarray"><span>'+data.songs[i]+'</span></div>';
 		}	
 	},
 	
@@ -87,8 +87,8 @@ window.onload = function(){
 	interval = setInterval(update,1000);
 }
 
-function changeSong(obj1){
-	currentIndex = parseInt(obj1.id,10);
+function changeSong(obj){
+	currentIndex = parseInt(obj.id,10);
 	initiate.song(currentIndex);
 	if(song.paused){
 		song.play();
