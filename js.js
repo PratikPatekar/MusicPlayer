@@ -38,13 +38,13 @@ var initiate = {
 	},
 	
 	song : function(index){
-		//song.pause();
+		song.pause();
 		song.src = data.url + data.songs[currentIndex] + '.mp3';
 		
 		download.setAttribute('href',song.src);
 		
 		song.load();
-		song.play();
+		//song.play();
 		
 		midtitle.innerHTML = '<span> '+data.songs[currentIndex]+' </span>';
 		
