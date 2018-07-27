@@ -105,11 +105,11 @@ function random(a,b){
 	return a + (b-a)*Math.random();
 }
 
-track.onchange = prog();
+//track.onchange = prog();
 
-function prog(){
-	alert(this.value);
-	//song.currentTime = (this.value*song.duration)/100;
+function prog(obj){
+	//alert(this.value);
+	song.currentTime = (obj.value*song.duration)/100;
 }	
 
 /*      *****Volume bar Value******
