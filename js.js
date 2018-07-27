@@ -25,8 +25,31 @@ var interval;
 	//}
 //}
 
+function changeVol(){}
+
 //Audio EventListners
 
+var initiate = {
+	
+	playlist : function(songslist){
+		for(var i=0;i<songslist.length;++i){
+			playlist.innerHTML += '<div id='+i+' class="songarray"><span>'+data.songs[i]+'</span></div>';
+		}	
+	},
+	
+	song : function(index){
+		//song.pause();
+		song.src = data.url + data.songs[currentIndex] + '.mp3';
+		
+		//download.setAttribute('href',song.src);
+		
+		song.load();
+		song.play();
+		
+		trackTitle.innerHTML = '<span> '+data.songs[currentIndex]+' </span>';
+		
+	}
+};
 
 song.onloadstart = function(){
 	//alert('loadstart');
@@ -54,28 +77,6 @@ function update(){
 	
 	track.value = Math.floor((song.currentTime/song.duration)*100);
 }
-
-var initiate = {
-	
-	playlist : function(songslist){
-		for(var i=0;i<songslist.length;++i){
-			playlist.innerHTML += '<div id='+i+' class="songarray"><span>'+data.songs[i]+'</span></div>';
-		}	
-	},
-	
-	song : function(index){
-		//song.pause();
-		song.src = data.url + data.songs[currentIndex] + '.mp3';
-		
-		//download.setAttribute('href',song.src);
-		
-		song.load();
-		song.play();
-		
-		trackTitle.innerHTML = '<span> '+data.songs[currentIndex]+' </span>';
-		
-	}
-};
 
 window.onload = function(){
 	
